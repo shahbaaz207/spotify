@@ -1,0 +1,287 @@
+
+.login{
+    display:grid;
+    place-items: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+.logo{
+    width: 100%;
+    object-fit: fill;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.login>a{
+    padding: 10px;
+    border-radius: 100px;
+    background-color: #1db954;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* player screen */
+.player_body{
+    display: flex;
+}
+
+.sidebar{
+    height: 200vh;
+    flex: .2;
+    color: #fff;
+    min-width: 170px;
+    padding: 0 10px;
+    background-color: #040404;
+}
+
+.sidebar>hr{
+    border: 1px solid #282828;
+    width: 90%;
+    margin: 10px auto;
+}
+.body{
+    flex: 0.8;
+    background:linear-gradient(rgb(115, 111, 139), rgba(0,0,0,1));
+    height: 200vh;
+    padding: 30px;
+    color: #fff;
+}
+
+.body::-webkit-scrollbar{
+    display: none;
+  }
+  
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    height:10vh;
+    width:110%;
+    background:#282828;
+    padding: 20px;
+    justify-content: space-between;
+    
+}
+
+.sidebar_logo{
+    height: 70px;
+    padding: 10px;
+    margin:0 auto;
+}
+
+.sidebarOption{
+    color: gray;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    padding: 1px;
+    transition: .2s color ease-in;
+    
+}
+
+.sidebarOption:hover{
+    color: #fff;
+}
+
+
+.sidebarOption>h4{
+    margin-left: 15px;
+}
+
+.sidebar_playlist{
+    padding: 5px;
+    font-size: 15px;
+    margin-left: 20px;
+    opacity: .7;
+}
+
+.sidebarOption>p{
+    margin: 10px 0 0 20px;
+    font-size: 14px;   
+}
+
+.footer_left{
+    flex: .3;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    max-width: 300px;
+
+}
+
+.footer_center{
+    flex: .4;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 300px;
+    color: #fff;
+}
+
+.footer_right{
+    flex: .3;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    justify-content: space-between;
+    max-width: 300px;
+}
+
+.footer_logo{
+    height: 70px;
+    width: 70px;
+    margin-right: 20px;
+    object-fit: contain;
+}
+
+.footer_green{
+    color: green;
+}
+.footer_songInfo>p{
+    font-size: 12px;
+}
+
+.music_icon:hover,.footer_green:hover{
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1.2) !important;
+}
+
+.footer_right*.MuiSlider-root{
+    color: green;
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.header_left{
+    background: #fff;
+    color: gray;
+    border-radius: 30px;
+    display: flex;
+    min-width: 70px;
+    padding: 3px;
+}
+
+.header_left>input{
+    border: none;
+    width: 100%;
+}
+
+.header_right{
+    background: #000;
+    display: flex;
+    padding: 8px;
+    height: 30px;
+    border-radius: 30px;
+    align-items: center;
+}
+
+.header_right>h4{
+    margin-left: 10px;
+}
+
+.body_info{
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+    }
+
+.body_info>img{
+    height: 15vw;
+    margin: 0 20px;
+    box-shadow: 0 8px 60px rgba(0,0,0,.5);
+}
+
+.body_info .body_infoText{
+    flex:1;
+}
+
+.body_infoText>p{
+    font-size: 14px;
+}
+
+.body_infoText>h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.body_icons{
+    display: flex;
+    align-items: center;
+}
+
+.body_icons>.MuiSvgIcon-root{
+    margin-right: 20px;
+}
+
+.suffer{
+    font-size: 70px !important;
+    margin: 20px 0 20px 0;
+}
+
+.suffer:hover{
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1.08) !important;
+}
+
+.body_songs{
+    margin: 20px -30px;
+}
+
+.songRow{
+    margin-left: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.songRow:hover{
+    cursor: pointer;
+    background-color: #000;
+    opacity: .8;
+}
+
+.songRow_info{
+    margin-left: 20px;
+}
+
+.songRow_info>h1{
+    font-size: 16px;
+}
+
+.songRow_info>p{
+    margin-top: 3px;
+    font-size: 14px;
+    color: gray;
+}
+
+.songRow_album{
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+}
+
+@media(max-width:760px){
+        .footer_right,.header_left{
+            display: none;
+        }
+        .footer_center{
+            text-align: center;
+            margin: 0 auto;
+        }
+        
+    }
